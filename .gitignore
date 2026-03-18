@@ -1,0 +1,67 @@
+# ============================================================
+# Shared Whiteboard App — Root .gitignore
+# ============================================================
+
+# ── Dependencies ─────────────────────────────────────────────
+node_modules/
+.pnp
+.pnp.js
+
+# ── Environment Variables (NEVER commit secrets) ─────────────
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+.env.staging
+
+# ── Build Outputs ────────────────────────────────────────────
+dist/
+build/
+out/
+.output/
+
+# ── Vite ─────────────────────────────────────────────────────
+client/dist/
+client/.vite/
+
+# ── Logs ─────────────────────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ── Runtime / OS ─────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ── Editor Directories ───────────────────────────────────────
+.idea/
+.vscode/
+*.code-workspace
+
+# ── Cache ────────────────────────────────────────────────────
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+.turbo/
+
+# ── Test / Coverage ──────────────────────────────────────────
+coverage/
+*.lcov
+.nyc_output/
+
+# ── Miscellaneous ────────────────────────────────────────────
+*.tgz
+*.tar.gz
+*.zip
